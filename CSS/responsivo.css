@@ -1,0 +1,59 @@
+/*Para definir largura*/
+
+@media screen and (max-width: 600px) {
+  /*dispositivos móveis*/
+
+  #sec-one {
+    width: 97vw;
+    margin: auto;
+  }
+
+  .ct-left {
+    width: 100%;
+  }
+
+  .ct-right {
+    display: none;
+  }
+
+  .circle-icone {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /*iPads, tablets*/
+  .bl-title-config .title span {
+    font-size: 0.9em;
+  }
+
+  .ct-left {
+    width: 100%;
+  }
+
+  .ct-right {
+    display: none;
+  }
+
+  .circle-icone {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*telas pequenas, laptops*/
+  .bl-title-config .title span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /*laptops, telas médias*/
+  .bl-title-config .title span {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  /*telas grandes, TVs*/
+}

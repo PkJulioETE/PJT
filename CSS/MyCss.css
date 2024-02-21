@@ -1,0 +1,176 @@
+/*Pré-definiçoes pessoal*/
+:root {
+  /*Cores botoes*/
+  --btn-green1: rgb(120, 165, 42);
+  --btn-green2: rgb(24, 172, 24);
+
+  /*Cores paleta*/
+  --paleta-black: #222222;
+  --paleta-yellow: #e09451;
+  --paleta-orange: #00ca1e;
+  --paleta-brow: #ccb297;
+  --paleta-white: #dce0d9;
+
+  --header-orange: rgb(2, 180, 196);
+  --header-yellow: rgb(7, 72, 133);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--paleta-black);
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(
+    90deg,
+    var(--header-orange) 0%,
+    var(--header-yellow) 100%
+  );
+  color: #000000;
+  font-weight: 1000;
+  text-shadow: rgb(47, 180, 24) 1px 2px 1px;
+  display: flex;
+}
+
+.bx-logo {
+  width: 15%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.bx-navegation {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav {
+  color: var(--paleta-white);
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 1.5rem;
+  text-shadow: rgba(0, 0, 0, 0.819) 1px 2px 2px;
+}
+
+.nav-dash {
+  text-shadow: rgb(0, 0, 0) 3px 3px 1px;
+}
+
+.nav-dash:hover {
+  text-shadow: rgba(0, 0, 0, 0.819) 1px 2px 2px;
+}
+
+.nav:hover {
+  text-decoration: underline;
+  color: #22c20a;
+  transform: translateY(-5px);
+  transition: all 0.4s;
+}
+
+/*roboto-regular [conteudo/texto]*/
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*josefin-sans-medium [destaque em texto]*/
+.font-josefin {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/*chakra-petch-semibold [TITULO]*/
+.font-chakra {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  /*dispositivos móveis*/
+  .bx-logo {
+    width: 30%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .bx-navegation {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  .nav {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /*iPads, tablets*/
+  .bx-logo {
+    width: 30%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .bx-navegation {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  .nav {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*telas pequenas, laptops*/
+  .bx-logo {
+    width: 26%;
+  }
+
+  .logo {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /*laptops, telas médias*/
+  .bx-logo {
+    width: 20%;
+  }
+
+  .logo {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  /*telas grandes, TVs*/
+}
